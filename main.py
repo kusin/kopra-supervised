@@ -4,7 +4,7 @@ import numpy as np
 
 # import library streamlit
 import streamlit as st
-import streamlit_extras.add_vertical_space as avs
+#import streamlit_extras.add_vertical_space as avs
 
 # lib untuk analisa statistik
 import scipy.stats as sc
@@ -54,14 +54,14 @@ dataset = pd.read_csv("dataset/ekstrasi-fitur-kopra-nonTelungkup_norm.csv")
 
 # container-header
 with st.container():
-  st.markdown("## Finding the best model classification for copra type using supervised learning algorithms")
-  avs.add_vertical_space(2) 
+  st.markdown("## Finding best model classification for copra type using supervised learning algorithms")
+  # avs.add_vertical_space(2) 
 
 # container-dataset
 with st.container():
   st.info("The dataset of copra type")
   st.dataframe(dataset, use_container_width=True)
-  avs.add_vertical_space(2)
+  # avs.add_vertical_space(2)
 
 # container-model and EDA
 with st.container():
